@@ -70,10 +70,14 @@ button:hover {
     justify-content: space-between;
 }
 
-
 .container-content {
     margin-top: 30px;
     width: 100%;
+}
+
+.empty-content {
+    text-align: center;
+    color: #6D97C3;
 }
 
 
@@ -119,6 +123,8 @@ li {
 }
 
 .input input {
+    color: var(--light-txt);
+    padding: 10px;
     border: none;
     border-radius: 5px;
     background-color: var(--main-button-bg);
