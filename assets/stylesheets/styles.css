@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+:root {
+    --body-bg: #5144BB;
+    --light-bg: #262945;
+    --container-bg: #1D2037;
+    --light-txt: #ffffff;
+    --dark-txt: #668AB5;
+    --main-button-accents: #846EE5;
+    --main-button-bg: #3D386C;
+    --secondary-button-bg: #244972;
+    --secondary-button-accents: #2FA9FF;
+    --border-radius: 10px;
+    --padding: 30px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    color: var(--light-txt);
+    background-color: var(--body-bg);
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    padding: 8px 16px;
+    min-width: 90px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container {
+    padding: 30px;
+    background-color: var(--container-bg);
+    width: 800px;
+    min-height: 600px;
+    border-radius: var(--border-radius);
+
+}
+
+.container-header {
+    background-color: var(--light-bg);
+    border-radius: var(--border-radius);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container-content {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    width: 100%;
+    background-color: var(--light-bg);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.assign-button {
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: var(--secondary-button-bg);
+    border: solid 1px var(--secondary-button-accents);
+    color: var(--secondary-button-accents);
+}
+
+.input {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.input input {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-button-bg);
+    flex: 1;
+}
+
+.input button {
+    border-radius: 5px;
+    color: var(--main-button-accents);
+    background-color: var(--main-button-bg);
+    border: solid 1px var(--main-button-accents);
+}
